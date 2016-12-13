@@ -26,5 +26,14 @@ namespace Addition
         {
             this.InitializeComponent();
         }
+
+        private void addNumbersBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int numb1 = Convert.ToInt32(numb1txtBox.Text);
+            int numb2 = Convert.ToInt32(numb2txtbox.Text);
+
+            int sum = numb1 + numb2;
+            sumTxtBox.Text = sum.ToString();
+        }
     }
 }

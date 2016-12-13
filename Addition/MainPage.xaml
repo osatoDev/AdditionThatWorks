@@ -8,6 +8,19 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="406,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
+            <Run Text="Number 1 :"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="418,380,0,0" TextWrapping="Wrap" Text="Number 2: " VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Left" Height="348" Margin="325,242,0,0" VerticalAlignment="Top" Width="420">
+            <TextBox x:Name="numb2txtbox" HorizontalAlignment="Left" Margin="279,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <TextBox x:Name="numb1txtBox" HorizontalAlignment="Left" Margin="279,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <Button x:Name="addNumbersBtn" Content="ADD NUMBERS" HorizontalAlignment="Left" Margin="33,203,0,0" VerticalAlignment="Top" Height="40" Width="132" Click="addNumbersBtn_Click"/>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="33,288,0,0" TextWrapping="Wrap" Text="Sum : " VerticalAlignment="Top"/>
+            <TextBox x:Name="sumTxtBox" HorizontalAlignment="Left" Margin="130,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        </Grid>
 
     </Grid>
 </Page>
